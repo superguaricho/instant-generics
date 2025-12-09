@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleContexts         #-}
 {-# LANGUAGE TypeOperators            #-}
-{-# LANGUAGE OverlappingInstances     #-}
+
 {-# LANGUAGE GADTs                    #-}
 {-# LANGUAGE PolyKinds                #-}
 

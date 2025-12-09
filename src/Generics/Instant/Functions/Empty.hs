@@ -1,7 +1,7 @@
 {-# LANGUAGE ScopedTypeVariables      #-}
 {-# LANGUAGE TypeOperators            #-}
 {-# LANGUAGE FlexibleContexts         #-}
-{-# LANGUAGE OverlappingInstances     #-}
+
 {-# LANGUAGE FlexibleInstances        #-}
 {-# LANGUAGE GADTs                    #-}
 {-# LANGUAGE PolyKinds                #-}

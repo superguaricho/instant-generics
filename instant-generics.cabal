@@ -22,7 +22,7 @@ description:
 stability:              experimental
 build-type:             Simple
 homepage:               http://www.cs.uu.nl/wiki/GenericProgramming/InstantGenerics
-cabal-version:          >= 1.6
+cabal-version:          >= 1.8
 extra-source-files:     examples/GMapAssoc.hs
                         examples/Test.hs
 
@@ -32,11 +32,12 @@ source-repository head
 
 library
   hs-source-dirs:         src
-  build-depends:          base >= 3.0 && < 5, template-haskell >= 2.4 && < 3,
-                          containers < 1.0, syb < 1.0
+  build-depends:          base >= 3.0 && < 5, template-haskell >= 2.4,
+                          containers, syb
   exposed-modules:        Generics.Instant,
                           Generics.Instant.Base,
                           Generics.Instant.TH,
+                          Generics.Instant.TH.Utils,
                           Generics.Instant.Instances,
                           Generics.Instant.Functions,
                           Generics.Instant.Functions.Show,

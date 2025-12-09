@@ -1,7 +1,7 @@
 {-# LANGUAGE TypeOperators            #-}
 {-# LANGUAGE FlexibleInstances        #-}
 {-# LANGUAGE FlexibleContexts         #-}
-{-# LANGUAGE OverlappingInstances     #-}
+
 {-# LANGUAGE GADTs                    #-}
 {-# LANGUAGE PolyKinds                #-}
 
@@ -68,6 +68,7 @@ instance GShow Bool     where gshow = show
 
 instance GShow a => GShow [a] where
   gshow = concat . wrap "[" "]" . intersperse "," . map gshow
+
 
 instance GShow [Char] where gshow = show
 
